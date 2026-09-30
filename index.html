@@ -3,12 +3,621 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link css  -->
+    <meta name="theme-color" content="#f7f8fc" />
+    <meta
+      name="description"
+      content="A calmer, clearer way to manage student records, attendance, classes, and family communication."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
+    <title>Northstar | Student management, made clearer</title>
   </head>
   <body>
-    <!-- link script -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Northstar home">
+          <span class="brand-mark" aria-hidden="true"
+            ><svg viewBox="0 0 32 32" fill="none">
+              <path
+                d="M16 2.5 19.7 12l9.8 4-9.8 3.8L16 29.5l-3.8-9.7L2.5 16l9.7-4L16 2.5Z"
+                fill="currentColor"
+              />
+              <circle cx="16" cy="16" r="3" fill="var(--mark-core)" /></svg
+          ></span>
+          <span>northstar<span class="brand-period">.</span></span>
+        </a>
+        <button
+          class="icon-button menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+        <nav
+          class="main-nav"
+          id="primary-navigation"
+          aria-label="Main navigation"
+        >
+          <a class="nav-link active" href="#overview">Overview</a>
+          <a class="nav-link" href="#platform">Platform</a>
+          <a class="nav-link" href="#how-it-works">How it works</a>
+          <a class="nav-link" href="#stories">Stories</a>
+          <a class="nav-link" href="#resources">Resources</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="icon-button search-toggle"
+            type="button"
+            aria-label="Search this page"
+            title="Search"
+          >
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="10.8" cy="10.8" r="6.8" />
+              <path d="m16 16 4.5 4.5" />
+            </svg>
+          </button>
+          <button
+            class="icon-button theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+            title="Switch theme"
+          >
+            <svg
+              class="sun-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"
+              /></svg
+            ><svg
+              class="moon-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.1 15.7A8.5 8.5 0 0 1 8.3 3.9 8.5 8.5 0 1 0 20.1 15.7Z"
+              />
+            </svg>
+          </button>
+          <a class="button button-dark header-login" href="#get-started"
+            >Log in
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M4 10h12m-5-5 5 5-5 5" /></svg
+          ></a>
+        </div>
+      </div>
+      <form class="search-panel" role="search" hidden>
+        <label for="site-search">Search this page</label>
+        <div class="search-field">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="6.8" />
+            <path d="m16 16 4.5 4.5" /></svg
+          ><input
+            id="site-search"
+            type="search"
+            placeholder="Try “attendance” or “families”"
+            autocomplete="off"
+          /><button
+            class="search-close"
+            type="button"
+            aria-label="Close search"
+          >
+            ×
+          </button>
+        </div>
+        <p class="search-status" aria-live="polite">
+          Search headings and page content.
+        </p>
+      </form>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="overview" aria-labelledby="hero-title">
+        <div
+          class="hero-image"
+          role="img"
+          aria-label="Students learning together on campus"
+        ></div>
+        <div class="hero-shade"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-content page-width">
+          <p class="eyebrow hero-eyebrow">
+            <span class="eyebrow-dot"></span> A brighter school day starts here
+          </p>
+          <h1 id="hero-title">
+            A better way to<br />manage <span>every student.</span>
+          </h1>
+          <p class="hero-copy">
+            Less time chasing information. More time helping students find their
+            way. Bring attendance, academics, and your school community into one
+            clear view.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-lime" href="#get-started"
+              >Explore the platform
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M4 10h12m-5-5 5 5-5 5" /></svg></a
+            ><a class="button button-glass" href="#how-it-works"
+              ><span class="play-icon" aria-hidden="true">▶</span> See how it
+              works</a
+            >
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <span>JM</span><span>AK</span><span>SR</span><span>+</span>
+            </div>
+            <p>
+              <strong>Trusted by 240+ school teams</strong><br />Making room for
+              more meaningful moments.
+            </p>
+          </div>
+        </div>
+        <div class="hero-note" aria-hidden="true">
+          <span class="note-mark">✳</span
+          ><span>Built around<br />the student</span>
+        </div>
+        <a class="hero-scroll" href="#platform"
+          ><span>Scroll to explore</span><span class="scroll-line"></span
+        ></a>
+      </section>
+
+      <section class="signal-strip" aria-label="Platform highlights">
+        <div class="signal-inner page-width">
+          <p>One connected place for the whole school</p>
+          <div>
+            <span>STUDENTS</span><span>FAMILIES</span><span>EDUCATORS</span
+            ><span>ADMINISTRATORS</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="platform-section section-pad" id="platform">
+        <div class="page-width">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow">
+                <span class="eyebrow-dot"></span> The Northstar difference
+              </p>
+              <h2>
+                All the important things.<br /><span>Finally in sync.</span>
+              </h2>
+            </div>
+            <p class="section-intro">
+              A thoughtful student management system should make school feel
+              simpler. Northstar brings the everyday essentials together, so
+              your team can focus on the people behind the data.
+            </p>
+          </div>
+          <div class="feature-layout">
+            <article class="feature-card feature-card-primary">
+              <div class="feature-topline">
+                <span class="feature-number">01 / CONNECTED RECORDS</span
+                ><span class="feature-icon"
+                  ><svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path
+                      d="M16 20v-1.5a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4V20m7.5-9a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm6-7.8a4 4 0 0 1 0 7.6m2 3.6a4 4 0 0 1 3 3.9V20"
+                    /></svg
+                ></span>
+              </div>
+              <h3>Every student,<br />seen in full.</h3>
+              <p>
+                Keep student profiles, guardians, enrollment, and essential
+                notes together in one dependable record.
+              </p>
+              <a class="text-link" href="#get-started"
+                >Explore student records <span aria-hidden="true">↗</span></a
+              >
+              <div class="profile-preview" aria-hidden="true">
+                <div class="profile-photo"></div>
+                <div>
+                  <strong>Amara Johnson</strong><span>Grade 08 · Active</span>
+                </div>
+                <span class="profile-status">Up to date</span>
+              </div>
+            </article>
+            <article class="feature-card feature-card-attendance">
+              <div class="feature-topline">
+                <span class="feature-number">02 / ATTENDANCE</span
+                ><span class="feature-icon"
+                  ><svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="16" rx="2" />
+                    <path d="M16 3v4M8 3v4M3 10h18m-13 5 2 2 4-4" /></svg
+                ></span>
+              </div>
+              <h3>Know who's here.<br />In a heartbeat.</h3>
+              <p>
+                Take attendance quickly, spot patterns early, and follow up
+                while it still matters.
+              </p>
+              <div class="attendance-bars" aria-label="Sample attendance trend">
+                <div><span>MON</span><i style="--bar: 76%"></i></div>
+                <div><span>TUE</span><i style="--bar: 91%"></i></div>
+                <div><span>WED</span><i style="--bar: 83%"></i></div>
+                <div><span>THU</span><i style="--bar: 96%"></i></div>
+                <div><span>FRI</span><i style="--bar: 88%"></i></div>
+              </div>
+            </article>
+            <article class="feature-card feature-card-academics">
+              <div class="feature-topline">
+                <span class="feature-number">03 / ACADEMICS</span
+                ><span class="feature-icon"
+                  ><svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="m3 9 9-5 9 5-9 5-9-5Z" />
+                    <path d="M7 11.2V16l5 3 5-3v-4.8M21 9v6" /></svg
+                ></span>
+              </div>
+              <h3>Make progress<br />easy to see.</h3>
+              <p>
+                Keep class schedules, subject progress, and key milestones
+                visible to the people who need them.
+              </p>
+              <div class="grade-preview" aria-hidden="true">
+                <span>Class 08 · Mathematics</span
+                ><strong>On track <i>↗</i></strong>
+                <div><i></i></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="workflow-section section-pad" id="how-it-works">
+        <div class="page-width workflow-grid">
+          <div class="workflow-copy">
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span> A little less busywork
+            </p>
+            <h2>From scattered<br />to <span>school-ready.</span></h2>
+            <p class="section-intro">
+              Your team already does meaningful work. Northstar gives the daily
+              details a better place to live.
+            </p>
+            <a class="button button-dark" href="#get-started"
+              >Meet your new school day
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M4 10h12m-5-5 5 5-5 5" /></svg
+            ></a>
+          </div>
+          <div class="workflow-steps">
+            <article class="step-row">
+              <span class="step-index">01</span>
+              <div>
+                <h3>Bring your school together</h3>
+                <p>
+                  Set up your people, classes, and everyday school information
+                  in one organized home.
+                </p>
+              </div>
+              <span class="step-check">✓</span>
+            </article>
+            <article class="step-row">
+              <span class="step-index">02</span>
+              <div>
+                <h3>Make the daily work lighter</h3>
+                <p>
+                  Update attendance, share progress, and keep records current
+                  without the extra chasing.
+                </p>
+              </div>
+              <span class="step-check">✓</span>
+            </article>
+            <article class="step-row">
+              <span class="step-index">03</span>
+              <div>
+                <h3>Give everyone a clearer view</h3>
+                <p>
+                  Help staff and families find the right information and take
+                  the next step with confidence.
+                </p>
+              </div>
+              <span class="step-check">✓</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="impact-section section-pad"
+        aria-labelledby="impact-title"
+      >
+        <div class="page-width impact-panel">
+          <div
+            class="impact-photo"
+            role="img"
+            aria-label="A teacher collaborating with students in a bright classroom"
+          ></div>
+          <div class="impact-overlay"></div>
+          <div class="impact-content">
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span> Time back for what matters
+            </p>
+            <h2 id="impact-title">
+              More clarity.<br /><span>More connection.</span>
+            </h2>
+            <p>
+              When the school day makes sense behind the scenes, students feel
+              the difference out in front.
+            </p>
+            <div class="impact-stats">
+              <div>
+                <strong>6.5<span> hrs</span></strong
+                ><span>returned to staff each week*</span>
+              </div>
+              <div>
+                <strong>1 clear</strong><span>view of each student</span>
+              </div>
+              <div><strong>Less</strong><span>time spent searching</span></div>
+            </div>
+            <small
+              >*Illustrative platform outcome; results vary by school.</small
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="stories-section section-pad" id="stories">
+        <div class="page-width stories-grid">
+          <div class="story-heading">
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span> From the school community
+            </p>
+            <h2>Better days,<br /><span>told by the people in them.</span></h2>
+            <div class="story-controls">
+              <button
+                class="icon-button story-arrow story-prev"
+                type="button"
+                aria-label="Previous story"
+              >
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M20 12H4m7 7-7-7 7-7" />
+                </svg></button
+              ><button
+                class="icon-button story-arrow story-next"
+                type="button"
+                aria-label="Next story"
+              >
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 12h16m-7-7 7 7-7 7" />
+                </svg></button
+              ><span class="story-count"
+                ><span class="story-current">01</span> / 03</span
+              >
+            </div>
+          </div>
+          <div class="story-quote-wrap">
+            <article class="story-quote active" data-story="0">
+              <span class="quote-mark">“</span>
+              <blockquote>
+                Northstar has given our teachers time back and made it easier
+                for families to feel part of the school day. The information we
+                need is finally where we expect it to be.
+              </blockquote>
+              <div class="quote-person">
+                <div class="person-avatar avatar-one">EP</div>
+                <div>
+                  <strong>Elena Park</strong
+                  ><span>School Principal · Cedar Grove</span>
+                </div>
+              </div>
+            </article>
+            <article class="story-quote" data-story="1">
+              <span class="quote-mark">“</span>
+              <blockquote>
+                Attendance used to mean paper lists and a lot of follow-up. Now
+                our team sees what needs attention early and can focus on
+                helping students.
+              </blockquote>
+              <div class="quote-person">
+                <div class="person-avatar avatar-two">DM</div>
+                <div>
+                  <strong>David Morgan</strong
+                  ><span>Student Services · Westfield Academy</span>
+                </div>
+              </div>
+            </article>
+            <article class="story-quote" data-story="2">
+              <span class="quote-mark">“</span>
+              <blockquote>
+                Families have a clearer picture of how their children are doing.
+                That small shift has changed the quality of our conversations.
+              </blockquote>
+              <div class="quote-person">
+                <div class="person-avatar avatar-three">LT</div>
+                <div>
+                  <strong>Leila Thompson</strong
+                  ><span>Family Liaison · Harbor School</span>
+                </div>
+              </div>
+            </article>
+            <div class="quote-indicators" aria-label="Choose a story">
+              <button
+                class="quote-dot active"
+                type="button"
+                aria-label="Show story 1"
+                aria-pressed="true"
+              ></button
+              ><button
+                class="quote-dot"
+                type="button"
+                aria-label="Show story 2"
+                aria-pressed="false"
+              ></button
+              ><button
+                class="quote-dot"
+                type="button"
+                aria-label="Show story 3"
+                aria-pressed="false"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resources-section section-pad" id="resources">
+        <div class="page-width">
+          <div class="section-heading resources-heading">
+            <div>
+              <p class="eyebrow">
+                <span class="eyebrow-dot"></span> Ideas for your next school day
+              </p>
+              <h2>Useful reads.<br /><span>Real school life.</span></h2>
+            </div>
+            <a class="text-link" href="#get-started"
+              >All resources <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="resource-grid">
+            <a class="resource-card" href="#get-started"
+              ><span class="resource-type">GUIDE · 6 MIN READ</span
+              ><span class="resource-art art-blue"
+                ><span class="art-sun"></span
+                ><span class="art-line art-line-one"></span
+                ><span class="art-line art-line-two"></span
+                ><span class="art-leaf">✳</span></span
+              >
+              <h3>A simpler start to student information</h3>
+              <span class="resource-link"
+                >Read the guide <span aria-hidden="true">↗</span></span
+              ></a
+            ><a class="resource-card" href="#get-started"
+              ><span class="resource-type">FIELD NOTES · 4 MIN READ</span
+              ><span class="resource-art art-lime"
+                ><span class="art-calendar"
+                  ><i></i><i></i><i></i><i></i><i></i><i></i></span
+                ><span class="art-pencil"></span
+              ></span>
+              <h3>What a connected school day looks like</h3>
+              <span class="resource-link"
+                >Explore the story <span aria-hidden="true">↗</span></span
+              ></a
+            ><a class="resource-card" href="#get-started"
+              ><span class="resource-type">CHECKLIST · 5 MIN READ</span
+              ><span class="resource-art art-coral"
+                ><span class="art-check">✓</span
+                ><span class="art-check art-check-two">✓</span
+                ><span class="art-check art-check-three">✓</span
+                ><span class="art-star">✳</span></span
+              >
+              <h3>A thoughtful guide to school-year planning</h3>
+              <span class="resource-link"
+                >Get the checklist <span aria-hidden="true">↗</span></span
+              ></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section" id="get-started">
+        <div class="cta-decoration" aria-hidden="true">✳</div>
+        <div class="page-width cta-inner">
+          <div>
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span> Make room for better school days
+            </p>
+            <h2>
+              Let's make the everyday<br />feel a little
+              <span>more possible.</span>
+            </h2>
+          </div>
+          <a
+            class="button button-lime"
+            href="mailto:hello@northstar.school?subject=Northstar%20platform%20enquiry"
+            >Talk with our team
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M4 10h12m-5-5 5 5-5 5" /></svg
+          ></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width">
+        <div class="footer-main">
+          <div class="footer-brand-col">
+            <a class="brand footer-brand" href="#top"
+              ><span class="brand-mark" aria-hidden="true"
+                ><svg viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M16 2.5 19.7 12l9.8 4-9.8 3.8L16 29.5l-3.8-9.7L2.5 16l9.7-4L16 2.5Z"
+                    fill="currentColor"
+                  />
+                  <circle
+                    cx="16"
+                    cy="16"
+                    r="3"
+                    fill="var(--mark-core)"
+                  /></svg></span
+              ><span>northstar<span class="brand-period">.</span></span></a
+            >
+            <p>Clearer systems.<br />More human school days.</p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <h3>Explore</h3>
+              <a href="#platform">Platform</a
+              ><a href="#how-it-works">How it works</a
+              ><a href="#stories">School stories</a>
+            </div>
+            <div>
+              <h3>For your school</h3>
+              <a href="#get-started">Student records</a
+              ><a href="#get-started">Attendance</a
+              ><a href="#get-started">Family connection</a>
+            </div>
+            <div>
+              <h3>Say hello</h3>
+              <a href="mailto:hello@northstar.school">Contact our team</a
+              ><a href="#resources">Resources</a
+              ><a href="#top">Back to top ↑</a>
+            </div>
+          </div>
+          <form class="newsletter-form">
+            <label for="newsletter-email"
+              >A little good news for educators.</label
+            >
+            <p>Occasional ideas for a more connected school.</p>
+            <div class="newsletter-field">
+              <input
+                id="newsletter-email"
+                type="email"
+                placeholder="Your email address"
+                required
+              /><button type="submit" aria-label="Subscribe to newsletter">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M4 10h12m-5-5 5 5-5 5" />
+                </svg>
+              </button>
+            </div>
+            <span class="newsletter-status" aria-live="polite"></span>
+          </form>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span id="current-year">2025</span> Northstar Student
+            Management</span
+          >
+          <div>
+            <a href="#get-started">Privacy</a><a href="#get-started">Terms</a
+            ><span>Made for the people who make school.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
