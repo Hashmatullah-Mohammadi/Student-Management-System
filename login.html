@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sign in to Northstar Student Management to manage student records, attendance, and family communication."
+    />
+    <title>Log in | Northstar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <div>
+          <a class="brand" href="index.html"
+            ><span class="brand-mark" aria-hidden="true"
+              ><svg viewBox="0 0 32 32" fill="none">
+                <path
+                  d="M16 2.5 19.7 12l9.8 4-9.8 3.8L16 29.5l-3.8-9.7L2.5 16l9.7-4L16 2.5Z"
+                  fill="currentColor"
+                />
+                <circle
+                  cx="16"
+                  cy="16"
+                  r="3"
+                  fill="var(--mark-core)"
+                /></svg></span
+            ><span>northstar<span class="brand-period">.</span></span></a
+          >
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="platform.html">Platform</a>
+          <a class="nav-link" href="how-it-works.html">How it works</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="icon-button theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+            title="Switch theme"
+          >
+            <svg
+              class="sun-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"
+              /></svg
+            ><svg
+              class="moon-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.1 15.7A8.5 8.5 0 0 1 8.3 3.9 8.5 8.5 0 1 0 20.1 15.7Z"
+              />
+            </svg>
+          </button>
+          <a class="button button-dark header-login" href="register.html"
+            >Create account</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="auth-page">
+      <div class="page-width auth-shell">
+        <aside class="auth-visual" aria-label="Northstar benefits">
+          <div class="auth-visual-inner">
+            <span class="auth-badge">Northstar access</span>
+            <h1>Welcome back <span>to calmer operations.</span></h1>
+            <p>
+              Keep student records, attendance, and communication in sync with a
+              schoolwide system your team can actually trust.
+            </p>
+            <ul class="auth-points">
+              <li>Track daily updates across classrooms and support teams</li>
+              <li>Keep families informed with one clear communication flow</li>
+              <li>
+                Spot changes earlier with a live view of student wellbeing
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <section class="auth-card" aria-labelledby="login-title">
+          <div class="auth-card-header">
+            <h2 id="login-title">Log in</h2>
+            <p>
+              Access your school dashboard and continue the day with clarity.
+            </p>
+          </div>
+
+          <form class="auth-form" action="index.html" method="get">
+            <div class="auth-field">
+              <label for="login-email">School email</label>
+              <input
+                id="login-email"
+                type="email"
+                placeholder="name@school.edu"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="auth-field">
+              <label for="login-password">Password</label>
+              <input
+                id="login-password"
+                type="password"
+                placeholder="Enter your password"
+                autocomplete="current-password"
+                required
+              />
+            </div>
+
+            <div class="auth-options">
+              <label><input type="checkbox" /> Keep me signed in</label>
+              <a class="auth-link" href="contact.html">Forgot password?</a>
+            </div>
+
+            <div class="auth-submit">
+              <button class="button button-dark" type="submit">
+                Log in to Northstar
+              </button>
+            </div>
+          </form>
+
+          <p class="auth-footer">
+            Need an account? <a href="register.html">Create one here</a>
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width">
+        <div class="footer-main">
+          <div class="footer-brand-col">
+            <a class="brand footer-brand" href="index.html"
+              ><span class="brand-mark" aria-hidden="true"
+                ><svg viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M16 2.5 19.7 12l9.8 4-9.8 3.8L16 29.5l-3.8-9.7L2.5 16l9.7-4L16 2.5Z"
+                    fill="currentColor"
+                  />
+                  <circle
+                    cx="16"
+                    cy="16"
+                    r="3"
+                    fill="var(--mark-core)"
+                  /></svg></span
+              ><span>northstar<span class="brand-period">.</span></span></a
+            >
+            <p>Clearer systems.<br />More human school days.</p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <h3>Explore</h3>
+              <a href="platform.html">Platform</a>
+              <a href="how-it-works.html">How it works</a>
+              <a href="index.html#stories">School stories</a>
+            </div>
+            <div>
+              <h3>For your school</h3>
+              <a href="index.html#get-started">Student records</a>
+              <a href="index.html#get-started">Attendance</a>
+              <a href="index.html#get-started">Family connection</a>
+            </div>
+            <div>
+              <h3>Say hello</h3>
+              <a href="contact.html">Contact our team</a>
+              <a href="index.html#resources">Resources</a>
+              <a href="#top">Back to top ↑</a>
+            </div>
+          </div>
+          <form class="newsletter-form">
+            <label for="newsletter-email"
+              >A little good news for educators.</label
+            >
+            <p>Occasional ideas for a more connected school.</p>
+            <div class="newsletter-field">
+              <input
+                id="newsletter-email"
+                type="email"
+                placeholder="Your email address"
+                required
+              /><button type="submit" aria-label="Subscribe to newsletter">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M4 10h12m-5-5 5 5-5 5" />
+                </svg>
+              </button>
+            </div>
+            <span class="newsletter-status" aria-live="polite"></span>
+          </form>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span id="current-year">2025</span> Northstar Student
+            Management</span
+          >
+          <div>
+            <a href="index.html#get-started">Privacy</a
+            ><a href="index.html#get-started">Terms</a
+            ><span>Made for the people who make school.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
