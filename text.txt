@@ -1,0 +1,19 @@
+how to connet vscode with GitHub . 
+// in terminal 
+1_ git config --global user.name "Hashmatullah Mohammadi"
+2_ git config --global user.email "hashamtullahm90@gmail.com"
+
+for testing connetion 
+// type : 
+۱ـ git config --global user.name
+    Hashmatullah Mohammadi
+۲ـ git config --global user.email 
+    hashamtullahm90@gmail.com
+
+
+command for push changes to github 
+
+in terminale type :
+1_ git add .
+2_ git commit -m "Update project"
+3_ git push

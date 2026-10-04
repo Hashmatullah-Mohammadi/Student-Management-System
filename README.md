@@ -1,2 +1,2 @@
 # Student-Management-System
-this 
+This is my first project SMS
